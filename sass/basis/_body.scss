@@ -1,0 +1,45 @@
+.socials-list,
+.footer-socials,
+.list,
+.site-nav-list a,
+.contacts-list,
+.tel-link,
+.mail-link,
+.logo,
+.footer-logo,
+.footer-contacts {
+  list-style: none;
+  text-decoration-line: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+
+  background-color: $main-background-color;
+  color: $primary-text-color;
+}
+.heading {
+  margin-top: 0px;
+  margin-bottom: 50px;
+  padding: 0px;
+
+  text-align: center;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+
+  line-height: 42px;
+  letter-spacing: 0.03em;
+}
