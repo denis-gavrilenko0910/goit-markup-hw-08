@@ -51,10 +51,9 @@
 .list:nth-child(4n) {
   margin-right: 0px;
 }
-.photo {
-  display: block;
-}
+
 .team-elements {
+  display: flex;
   padding: 30px 32px;
 }
 .socials {
