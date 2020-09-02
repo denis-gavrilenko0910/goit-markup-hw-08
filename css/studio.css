@@ -57,11 +57,6 @@
 }
 
 .features {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   margin: 0px;
   padding: 0px;
 }
@@ -71,7 +66,7 @@
 }
 
 .features .list {
-  width: 270px;
+  max-width: 270px;
   margin-right: 30px;
 }
 
@@ -183,6 +178,10 @@
   padding: 0px;
 }
 
+.photo {
+  display: block;
+}
+
 .profession {
   margin-bottom: 16px;
   text-align: center;
@@ -204,7 +203,6 @@
 }
 
 .team .list {
-  width: calc((100% - 30px * 3) / 4);
   margin-right: 30px;
   text-align: center;
   background-color: #ffffff;
@@ -215,10 +213,6 @@
 
 .list:nth-child(4n) {
   margin-right: 0px;
-}
-
-.photo {
-  display: block;
 }
 
 .team-elements {

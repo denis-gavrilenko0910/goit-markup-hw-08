@@ -1,7 +1,4 @@
 .features {
-  display: flex;
-  flex-wrap: wrap;
-
   margin: 0px;
   padding: 0px;
 }
@@ -19,6 +16,7 @@
 }
 
 .features-background {
+  display: flex;
   margin-bottom: 30px;
   height: 120px;
   border-radius: 4px;

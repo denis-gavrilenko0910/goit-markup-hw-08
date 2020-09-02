@@ -3,7 +3,7 @@
 }
 .footer-container {
   position: relative;
-  display: flex;
+
   padding: 60px 15px;
   align-items: center;
 }
@@ -61,8 +61,6 @@
   position: absolute;
   left: 315px;
   top: 72px;
-  display: block;
-  margin-right: 93px;
 }
 .text-join {
   display: flex;
@@ -78,16 +76,7 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
-.footer-socials {
-  display: flex;
-  padding: 0px;
-  margin: 0px;
-}
-.footer-socials-list {
-  width: 44px;
-  height: 44px;
-  margin-right: 10px;
-}
+
 .footer-link {
   display: flex;
   width: 44px;
