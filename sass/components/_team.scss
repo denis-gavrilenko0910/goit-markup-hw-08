@@ -2,10 +2,21 @@
   background-color: $team-background-color;
 }
 .team {
-  display: flex;
-  flex-wrap: wrap;
   margin: 0px;
   padding: 0px;
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 768px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 1170px;
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 .names,
 .profession,
@@ -13,9 +24,7 @@
   margin: 0px;
   padding: 0px;
 }
-.photo {
-  display: block;
-}
+
 .profession {
   margin-bottom: 16px;
   text-align: center;
@@ -39,27 +48,65 @@
   line-height: 19px;
   letter-spacing: 0.03em;
 }
-.team .list {
-  margin-right: 30px;
+.team-list {
+  margin-bottom: 30px;
+  @media screen and (min-width: 480px) {
+  }
+  @media screen and (min-width: 768px) {
+    width: 354px;
 
-  text-align: center;
+    margin-right: 30px;
+    &:nth-child(2n) {
+      margin-right: 0px;
+    }
+  }
 
-  background-color: $main-background-color;
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+    &:nth-child(2n) {
+      margin-right: 30px;
+    }
+    &:nth-child(4n) {
+      margin-right: 0px;
+    }
+    margin-bottom: 0px;
+    text-align: center;
+
+    background-color: $main-background-color;
+  }
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-.list:nth-child(4n) {
-  margin-right: 0px;
+.photo {
+  display: block;
+  @media screen and (min-width: 480px) {
+    width: 100%;
+  }
+  @media screen and (min-width: 768px) {
+    width: 100%;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 100%;
+  }
 }
-
 .team-elements {
-  padding: 30px 32px;
+  @media screen and (min-width: 480px) {
+    padding: 27px 122px;
+  }
+  @media screen and (min-width: 768px) {
+    padding: 27px 74px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding: 30px 32px;
+  }
 }
 .socials {
   display: flex;
 }
 .socials-list {
+  width: 44px;
+  height: 44px;
   margin-right: 10px;
 }
 .link {
