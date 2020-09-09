@@ -52,13 +52,6 @@
   padding: 60px 0px;
 }
 
-@media screen and (min-width: 768px) {
-  .section {
-    padding-top: 67px;
-    padding-bottom: 53px;
-  }
-}
-
 @media screen and (min-width: 1200px) {
   .section {
     padding: 94px 0px;
