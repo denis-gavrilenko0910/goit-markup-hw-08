@@ -8,7 +8,7 @@
   }
   @media screen and (min-width: 1200px) {
     display: block;
-    width: 1170px;
+
     margin-top: 0px;
     margin-bottom: 50px;
     padding: 0px;
@@ -34,7 +34,6 @@
     display: none;
   }
   @media screen and (min-width: 1200px) {
-    width: 1170px;
     display: flex;
     flex-wrap: wrap;
   }
@@ -54,7 +53,7 @@
 }
 .work-text {
   position: absolute;
-  width: 370px;
+  width: 100%;
   bottom: 0;
   right: 0;
   margin: 0px;
