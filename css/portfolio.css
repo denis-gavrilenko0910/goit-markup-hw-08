@@ -19,6 +19,10 @@
           text-decoration-line: none;
 }
 
+* {
+  outline: 1px solid red;
+}
+
 .container {
   margin-left: auto;
   margin-right: auto;
@@ -45,8 +49,20 @@
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding: 60px 0px;
+}
+
+@media screen and (min-width: 768px) {
+  .section {
+    padding-top: 67px;
+    padding-bottom: 53px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section {
+    padding: 94px 0px;
+  }
 }
 
 body {

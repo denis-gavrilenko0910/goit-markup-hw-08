@@ -4,19 +4,15 @@
 .team {
   margin: 0px;
   padding: 0px;
-  @media screen and (min-width: 480px) {
-    width: 480px;
-  }
-  @media screen and (min-width: 768px) {
-    width: 768px;
-    display: flex;
-    flex-wrap: wrap;
-  }
-  @media screen and (min-width: 1200px) {
-    width: 1170px;
-    display: flex;
-    flex-wrap: wrap;
-  }
+}
+.team-list {
+  margin: 0px;
+  padding: 0px;
+
+  background-color: $main-background-color;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 .names,
 .profession,
@@ -48,52 +44,15 @@
   line-height: 19px;
   letter-spacing: 0.03em;
 }
-.team-list {
-  margin-bottom: 30px;
-  @media screen and (min-width: 480px) {
-  }
-  @media screen and (min-width: 768px) {
-    width: 354px;
 
-    margin-right: 30px;
-    &:nth-child(2n) {
-      margin-right: 0px;
-    }
-  }
-
-  @media screen and (min-width: 1200px) {
-    width: 270px;
-    &:nth-child(2n) {
-      margin-right: 30px;
-    }
-    &:nth-child(4n) {
-      margin-right: 0px;
-    }
-    margin-bottom: 0px;
-    text-align: center;
-
-    background-color: $main-background-color;
-  }
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
-}
 .photo {
   display: block;
-  @media screen and (min-width: 480px) {
-    width: 100%;
-  }
-  @media screen and (min-width: 768px) {
-    width: 100%;
-  }
-  @media screen and (min-width: 1200px) {
-    width: 100%;
-  }
 }
 .team-elements {
-  @media screen and (min-width: 480px) {
-    padding: 27px 122px;
-  }
+  align-items: center;
+  justify-content: center;
+  padding: 27px 122px;
+
   @media screen and (min-width: 768px) {
     padding: 27px 74px;
   }
@@ -103,16 +62,14 @@
 }
 .socials {
   display: flex;
-}
-.socials-list {
-  width: 44px;
-  height: 44px;
+  flex-wrap: wrap;
+  justify-content: center;
+
   margin-right: 10px;
 }
 .link {
   display: flex;
-  width: 44px;
-  height: 44px;
+
   border-radius: 50%;
 
   align-items: center;

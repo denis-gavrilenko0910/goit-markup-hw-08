@@ -1,11 +1,9 @@
 .work-heading {
   display: none;
   @media screen and (min-width: 480px) {
-    width: 480px;
     display: none;
   }
   @media screen and (min-width: 768px) {
-    width: 768px;
     display: none;
   }
   @media screen and (min-width: 1200px) {
@@ -30,15 +28,13 @@
   padding: 0px;
   display: none;
   @media screen and (min-width: 480px) {
-    width: 480px;
     display: none;
   }
   @media screen and (min-width: 768px) {
-    width: 768px;
     display: none;
   }
   @media screen and (min-width: 1200px) {
-    width: 1200px;
+    width: 1170px;
     display: flex;
     flex-wrap: wrap;
   }
