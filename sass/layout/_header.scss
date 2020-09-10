@@ -1,5 +1,8 @@
-/*.navigation {
-  display: flex;
+.navigation {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+
   align-items: center;
 }
 .logo {
@@ -15,7 +18,9 @@
   color: $accent-color;
 }
 .site-nav {
-  display: flex;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
   margin: 0px;
   margin-right: auto;
   margin-left: 85px;
@@ -67,7 +72,7 @@
 }
 
 /* Шапка. Почта и телефон */
-/*
+
 .contacts {
   padding: 0px;
   margin: 0px;
@@ -114,4 +119,3 @@
 .mail-link {
   margin-left: 0px;
 }
-*/

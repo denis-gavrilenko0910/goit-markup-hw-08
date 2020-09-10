@@ -1,18 +1,26 @@
-/*.footer {
+.footer {
   background-color: $footer-background-color;
 }
-.footer-container {
-  position: relative;
+.container.footer-container {
+  @media screen and (min-width: 768px) {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media screen and (min-width: 1200px) {
+    position: relative;
+  }
 
   padding: 60px 15px;
   align-items: center;
 }
 
 .footer-logo {
-  display: block;
+  display: inline-block;
   margin-bottom: 20px;
 
-  font-family: Raleway;
+  font-family: 'Raleway', sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 26px;
@@ -24,7 +32,11 @@
   color: $third-text-color;
 }
 .address-container {
+  display: inline-block;
   margin-right: 70px;
+
+  @media screen and (min-width: 768px) {
+  }
 
   font-style: normal;
   font-weight: normal;
@@ -37,11 +49,6 @@
 }
 .address-info {
   font-style: normal;
-  font-weight: 400px;
-  font-size: 14px;
-
-  line-height: 21px;
-  letter-spacing: 0.03em;
 }
 .footer-contacts {
   display: inline-block;
@@ -58,9 +65,15 @@
   letter-spacing: 0.03em;
 }
 .socials-container {
-  position: absolute;
-  left: 315px;
-  top: 72px;
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    top: 65px;
+    right: 89px;
+  }
+  @media screen and (min-width: 1200px) {
+    position: unset;
+    margin-right: 93px;
+  }
 }
 .socials {
   display: flex;
@@ -73,7 +86,7 @@
   margin-right: 10px;
 }
 .text-join {
-  display: flex;
+  display: inline-block;
   margin-bottom: 20px;
 
   font-weight: bold;
@@ -109,14 +122,17 @@
   margin-right: 0px;
 }
 .asign-container {
-  position: absolute;
-  left: 600px;
-  top: 72px;
-
-  width: 570px;
+  @media screen and (min-width: 768px) {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 570px;
+  }
 }
 .subscribe-text {
-  display: block;
+  display: inline-block;
   margin-bottom: 20px;
 
   font-weight: bold;
@@ -130,7 +146,10 @@
   text-transform: uppercase;
 }
 .subscribe-form {
-  display: flex;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 .subscribe-input {
   margin: 0px;
@@ -140,7 +159,7 @@
   display: flex;
   margin-right: 12px;
   padding: 15px 16px;
-  width: 100%;
+
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
 
@@ -179,4 +198,3 @@
   background-size: contain;
   background-repeat: no-repeat;
 }
-*/

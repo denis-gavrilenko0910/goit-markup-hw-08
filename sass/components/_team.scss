@@ -69,8 +69,7 @@
 .team-elements {
   align-items: center;
   justify-content: center;
-  padding: 27px 122px;
-
+  padding: 27px 0px;
   @media screen and (min-width: 768px) {
     padding: 27px 74px;
   }
@@ -80,10 +79,8 @@
 }
 .socials {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
 
-  margin-right: 10px;
+  justify-content: center;
 }
 .link {
   display: flex;
