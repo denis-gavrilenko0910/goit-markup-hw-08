@@ -14,7 +14,8 @@
 .footer-logo,
 .footer-contacts,
 .team-list,
-.clients-list {
+.clients-list,
+.radio-buttons {
   list-style: none;
   -webkit-text-decoration-line: none;
           text-decoration-line: none;
@@ -71,10 +72,17 @@ body {
   padding: 0px;
   text-align: center;
   font-style: normal;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 42px;
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 33px;
   letter-spacing: 0.03em;
+}
+
+@media screen and (min-width: 1200px) {
+  .heading {
+    font-size: 36px;
+    line-height: 42px;
+  }
 }
 
 .hero-container {
@@ -129,11 +137,10 @@ body {
 }
 
 .button {
-  width: 200px;
-  height: 50px;
   border: solid transparent;
   border-radius: 4px;
-  padding: 10px 32px;
+  padding: 10px 28px;
+  font-size: 16px;
   font-weight: bold;
   color: #ffffff;
   background-color: #2196f3;
@@ -146,6 +153,13 @@ body {
 .button:hover, .button:focus {
   cursor: pointer;
   background-color: #188ce8;
+}
+
+@media screen and (min-width: 1200px) {
+  .button:hover, .button:focus {
+    width: 200px;
+    height: 50px;
+  }
 }
 
 .features {
@@ -475,7 +489,7 @@ body {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.9px) {
   .clients-list:not(:last-child) {
     margin-bottom: 30px;
   }
