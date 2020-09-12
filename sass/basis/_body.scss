@@ -15,9 +15,10 @@
   list-style: none;
   text-decoration-line: none;
 }
-/* {
+* {
   outline: 1px solid red;
-}*/
+}
+
 .container {
   margin-left: auto;
   margin-right: auto;
@@ -46,7 +47,11 @@ body {
 
   background-color: $main-background-color;
   color: $primary-text-color;
+  &.modal-open {
+    overflow: hidden;
+  }
 }
+
 .heading {
   margin-top: 0px;
   margin-bottom: 50px;
