@@ -1,9 +1,7 @@
 .hidden {
   font-size: 0px;
 }
-.projects-list {
-  list-style: none;
-}
+
 .main-section {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -16,31 +14,44 @@ h2,
   padding: 0px;
   text-decoration: none;
 }
-.our-projects {
-  display: flex;
-  flex-wrap: wrap;
 
+.our-projects {
   margin: 0px;
   padding: 0px;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
 }
+
 .projects-list {
-  width: 370px;
+  margin: 0px;
+  padding: 0px;
+
   border: 1px solid #eeeeee;
-  margin-right: 30px;
-  margin-bottom: 30px;
 
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
       1px 4px 6px rgba(0, 0, 0, 0.16);
   }
+
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 6 * 15px) / 3);
+  }
 }
-.projects-list:nth-child(3n) {
-  margin-right: 0px;
-}
-.projects-list:nth-last-child(-n + 3) {
-  margin-bottom: 0px;
-}
+
 .item-container h2 {
   margin-bottom: 4px;
 
@@ -68,8 +79,6 @@ h2,
   display: block;
 }
 .projects-link {
-  width: 370px;
-
   color: $primary-text-color;
 }
 .hidden-text-container {
@@ -82,7 +91,7 @@ h2,
 
   top: 0px;
   left: 0px;
-  width: 370px;
+
   padding: 63px 24px;
   margin: 0px;
 

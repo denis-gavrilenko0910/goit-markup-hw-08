@@ -6,6 +6,7 @@
 .socials,
 .features-list,
 .site-nav,
+.site-nav a,
 .contacts-list,
 .work-examples-list,
 .tel-link,
@@ -15,14 +16,11 @@
 .footer-contacts,
 .team-list,
 .clients-list,
+.projects-list,
 .radio-buttons {
   list-style: none;
   -webkit-text-decoration-line: none;
           text-decoration-line: none;
-}
-
-* {
-  outline: 1px solid red;
 }
 
 .container {
@@ -552,12 +550,6 @@ body.modal-open {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media screen and (min-width: 480px) {
-  .backdrop {
-    padding: 0px;
-  }
-}
-
 .backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
@@ -780,7 +772,7 @@ textarea {
   }
 }
 
-.checkbox-icon {
+.visualy-hidden {
   /* Скрытый чекбокс */
   position: absolute;
   width: 1px;
@@ -809,17 +801,18 @@ textarea {
 
 .icon-checkbox {
   display: inline-block;
-  margin-right: 10px;
-  height: 15px;
+  vertical-align: middle;
   width: 15px;
-  border: 2px solid #212121;
+  height: 15px;
+  margin-right: 10px;
   border-radius: 2px;
-  -webkit-transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-repeat: no-repeat;
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.checkbox-icon:checked + .icon-checkbox {
-  border-color: #2196f3;
+.input-checkbox:checked + .icon-checkbox {
+  fill: #2196f3;
   background-color: #2196f3;
   background-image: url(../img/svg/iconcheck.svg);
   background-size: contain;

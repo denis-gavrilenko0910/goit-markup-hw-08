@@ -2,6 +2,7 @@
 .socials,
 .features-list,
 .site-nav,
+.site-nav a,
 .contacts-list,
 .work-examples-list,
 .tel-link,
@@ -11,12 +12,10 @@
 .footer-contacts,
 .team-list,
 .clients-list,
+.projects-list,
 .radio-buttons {
   list-style: none;
   text-decoration-line: none;
-}
-* {
-  outline: 1px solid red;
 }
 
 .container {
@@ -47,6 +46,7 @@ body {
 
   background-color: $main-background-color;
   color: $primary-text-color;
+
   &.modal-open {
     overflow: hidden;
   }
