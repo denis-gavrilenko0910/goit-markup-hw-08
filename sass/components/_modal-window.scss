@@ -235,9 +235,10 @@ textarea {
 }
 .icon-checkbox {
   display: inline-block;
-  width: 15px;
-  height: 15px;
   margin-right: 10px;
+  height: 15px;
+  width: 15px;
+
   border: 2px solid $primary-text-color;
   border-radius: 2px;
 
@@ -250,5 +251,6 @@ textarea {
   background-color: $accent-color;
   background-image: url(../img/svg/iconcheck.svg);
   background-size: contain;
+  background-repeat: no-repeat;
   background-origin: border-box;
 }
