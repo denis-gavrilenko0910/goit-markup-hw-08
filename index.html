@@ -159,32 +159,63 @@
           <h3 class="work-heading">Чем мы занимаемся</h3>
           <ul class="work-examples">
             <li class="work-examples-list">
-              <img
-                class="work-pic"
-                src="./img/what-we-do/imgLT.jpg"
-                alt="на фото ноутбук"
-              />
               <div class="work-pic-container">
+                <picture>
+                  <source
+                    class="work-pic"
+                    srcset="
+                      ./img/what-we-do/laptop-desktop@1x.jpg,
+                      ./img/what-we-do/laptop-desktop@2x.jpg 2x
+                    "
+                    type="image/jpeg"
+                  />
+                  <img
+                    class="work-pic"
+                    src="./img/what-we-do/laptop-desktop@1x.jpg"
+                    alt="Десктопные приложения"
+                    width="370"
+                  />
+                </picture>
                 <p class="work-text">Десктопные приложения</p>
               </div>
             </li>
 
             <li class="work-examples-list">
               <div class="work-pic-container">
-                <img
-                  class="work-pic"
-                  src="./img/what-we-do/secondLT.jpg"
-                  alt="картинка мобильного телефона"
-                />
+                <picture>
+                  <source
+                    class="work-pic"
+                    srcset="
+                      ./img/what-we-do/phone-desktop@1x.jpg,
+                      ./img/what-we-do/phone-desktop@2x.jpg 2x
+                    "
+                    type="image/jpeg"
+                  />
+                  <img
+                    class="work-pic"
+                    src="./img/what-we-do/phone-desktop@1x.jpg"
+                    alt="Десктопные приложения"
+                    width="370"
+                  />
+                </picture>
                 <p class="work-text">Мобильные приложения</p>
               </div>
             </li>
             <li class="work-examples-list">
               <div class="work-pic-container">
+                <source
+                  class="work-pic"
+                  srcset="
+                    ./img/what-we-do/tablet-desktop@1x.jpg,
+                    ./img/what-we-do/tablet-desktop@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                />
                 <img
                   class="work-pic"
-                  src="./img/what-we-do/tablet.jpg"
-                  alt="картинка компьютера от компании Эпл"
+                  src="./img/what-we-do/tablet-desktop@1x.jpg"
+                  alt="картинка мобильного телефона"
+                  width="370"
                 />
                 <p class="work-text">Дизайнерские решения</p>
               </div>
@@ -200,12 +231,44 @@
           <h3 class="heading">Наша команда</h3>
           <ul class="team">
             <li class="team-list">
-              <img
-                class="photo"
-                src="./img/team/igordemianenko.jpg"
-                alt="На фото Игорь Демьяненко, дизайнер продукта"
-                width="270"
-              />
+              <picture>
+                <source
+                  class="photo"
+                  srcset="
+                    ./img/team/desktop/igor-desktop@1x.jpg,
+                    ./img/team/desktop/igor-desktop@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                  media="(min-width:1200px)"
+                />
+
+                <source
+                  class="photo"
+                  srcset="
+                    ./img/team/tablet/igor-tab@1x.jpg,
+                    ./img/team/tablet/igor-tab@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                  media="(min-width:768px)"
+                />
+
+                <source
+                  class="photo"
+                  srcset="
+                    ./img/team/mobile/igor-mob@1x.jpg,
+                    ./img/team/mobile/igor-mob@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                  media="(max-width:767px)"
+                />
+                <img
+                  class="photo"
+                  src="./img/team/mobile/igor-mob@1x.jpg"
+                  alt="Игорь Демьяненко"
+                  srcset="./img/team/mobile/igor-mob@2x.jpg 2x"
+                />
+              </picture>
+
               <div class="team-elements">
                 <h4 class="names">Игорь Демьяненко</h4>
                 <p class="profession">Product Designer</p>
@@ -263,12 +326,44 @@
             </li>
 
             <li class="team-list">
-              <img
-                class="photo"
-                src="./img/team/olgarepina.jpg"
-                alt="На фото Ольга Репина, веб разработчик"
-                width="270"
-              />
+              <picture>
+                <source
+                  class="photo"
+                  srcset="
+                    ./img/team/desktop/olga-desktop@1x.jpg,
+                    ./img/team/desktop/olga-desktop@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                  media="(min-width:1200px)"
+                />
+
+                <source
+                  class="photo"
+                  srcset="
+                    ./img/team/tablet/olga-tab@1x.jpg,
+                    ./img/team/tablet/olga-tab@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                  media="(min-width:768px)"
+                />
+
+                <source
+                  class="photo"
+                  srcset="
+                    ./img/team/mobile/olga-mob@1x.jpg,
+                    ./img/team/mobile/olga-mob@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                  media="(max-width:767px)"
+                />
+                <img
+                  class="photo"
+                  src="./img/team/mobile/olga-mob@1x.jpg"
+                  alt="На фото Ольга Репина, веб разработчик"
+                  srcset="./img/team/mobile/olga-mob@2x.jpg 2x"
+                />
+              </picture>
+
               <div class="team-elements">
                 <h4 class="names">Ольга Репина</h4>
                 <p class="profession">Frontend Developer</p>
@@ -326,12 +421,44 @@
             </li>
 
             <li class="team-list">
-              <img
-                class="photo"
-                src="./img/team/nikolaitarasov.jpg"
-                alt="На фото Николай Тарасов, маркетолог"
-                width="270"
-              />
+              <picture>
+                <source
+                  class="photo"
+                  srcset="
+                    ./img/team/desktop/nikola-desktop@1x.jpg,
+                    ./img/team/desktop/nikola-desktop@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                  media="(min-width:1200px)"
+                />
+
+                <source
+                  class="photo"
+                  srcset="
+                    ./img/team/tablet/nikola-tab@1x.jpg,
+                    ./img/team/tablet/nikola-tab@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                  media="(min-width:768px)"
+                />
+
+                <source
+                  class="photo"
+                  srcset="
+                    ./img/team/mobile/nikola-mob@1x.jpg,
+                    ./img/team/mobile/nikola-mob@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                  media="(max-width:767px)"
+                />
+                <img
+                  class="photo"
+                  src="./img/team/mobile/nikola-mob@1x.jpg"
+                  alt="На фото Николай Тарасов, маркетолог"
+                  srcset="./img/team/mobile/nikola-desktop@2x.jpg 2x"
+                />
+              </picture>
+
               <div class="team-elements">
                 <h4 class="names">Николай Тарасов</h4>
                 <p class="profession">Marketing</p>
@@ -389,12 +516,44 @@
             </li>
 
             <li class="team-list">
-              <img
-                class="photo"
-                src="./img/team/mikhailiermakov.jpg"
-                alt="На фото Михаил Ермаков, дизайнер"
-                width="270"
-              />
+              <picture>
+                <source
+                  class="photo"
+                  srcset="
+                    ./img/team/desktop/misha-desktop@1x.jpg,
+                    ./img/team/desktop/misha-desktop@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                  media="(min-width:1200px)"
+                />
+
+                <source
+                  class="photo"
+                  srcset="
+                    ./img/team/tablet/misha-tab@1x.jpg,
+                    ./img/team/tablet/misha-tab@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                  media="(min-width:768px)"
+                />
+
+                <source
+                  class="photo"
+                  srcset="
+                    ./img/team/mobile/misha-mob@1x.jpg,
+                    ./img/team/mobile/misha-mob@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                  media="(max-width:767px)"
+                />
+                <img
+                  class="photo"
+                  src="./img/team/mobile/misha-mob@1x.jpg"
+                  alt="На фото Михаил Ермаков, дизайнер"
+                  srcset="./img/team/mobile/misha-mob@2x.jpg 2x"
+                />
+              </picture>
+
               <div class="team-elements">
                 <h4 class="names">Михаил Ермаков</h4>
                 <p class="profession">UI Designer</p>

@@ -267,6 +267,7 @@ h2,
 
 .portfolio-pic {
   display: block;
+  width: 100%;
 }
 
 .projects-link {
