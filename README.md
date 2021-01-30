@@ -10,6 +10,6 @@
 *A few screenshots of the result.*
 
 ![mobile version screenshot](https://github.com/GavrylenkoDenys/goit-markup-hw-08/blob/master/Screenshot%202021-01-29%20222455.jpg)
-![the tablet version screenshot](https://github.com/GavrylenkoDenys/goit-markup-hw-08/blob/master/Screenshot%202021-01-29%20190617.jpg)
+![the tablet version screenshot](https://github.com/GavrylenkoDenys/goit-markup-hw-08/blob/master/Screenshot%202021-01-29%20222532.jpg)
 ![desktop version screenshot](https://github.com/GavrylenkoDenys/goit-markup-hw-08/blob/master/Screenshot%202021-01-29%20222337.jpg)
 
