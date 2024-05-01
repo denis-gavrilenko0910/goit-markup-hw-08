@@ -1,4 +1,4 @@
-**It's a adaptive landing page in several formats:**
+**It's an adaptive landing page in several formats:**
 * mobile 
 * tablet
 * desktop
